@@ -13,6 +13,8 @@
                 <div class="panel-body">
                     <p>{{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}.</p>
                     <p>{{ trans('strings.frontend.homepage') }}.</p>
+                    <p>Fork me on GitHub: <a href="https://github.com/josecelano/my-favourite-appliances">josecelano/my-favourite-appliances</a>
+                    </p>
                 </div>
             </div><!-- panel -->
 
