@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\WishList;
+namespace App\Models\Wishlist;
 
 use App\Models\Access\User\User;
 use App\Models\Appliance\Appliance;
@@ -8,13 +8,13 @@ use Closure;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class WishList
+ * Class Wishlist
  * @property int user_id
  * @property integer[] appliance_ids
  * @property User user
- * @package App\Models\WishList
+ * @package App\Models\Wishlist
  */
-class WishList extends Model
+class Wishlist extends Model
 {
     /** @var string */
     protected $table = 'wishlists';

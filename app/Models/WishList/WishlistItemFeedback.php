@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\WishList;
+namespace App\Models\Wishlist;
 
 use Illuminate\Database\Eloquent\Model;
 
-class WishListItemFeedback extends Model
+class WishlistItemFeedback extends Model
 {
     /** @var string */
     protected $table = 'wishlist_item_feedbacks';
@@ -30,7 +30,7 @@ class WishListItemFeedback extends Model
      */
     public function wishlist()
     {
-        return $this->belongsTo('App\Models\WishList\WishList');
+        return $this->belongsTo('App\Models\Wishlist\Wishlist');
     }
 
     /**

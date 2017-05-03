@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Repositories\Frontend\WishList;
+namespace App\Repositories\Frontend\Wishlist;
 
-use App\Models\WishList\WishList;
+use App\Models\Wishlist\Wishlist;
 use App\Repositories\BaseRepository;
 use App\Repositories\Frontend\Appliance\ApplianceRepository;
 
-class WishListRepository extends BaseRepository
+class WishlistRepository extends BaseRepository
 {
     /**
      * Associated Repository Model.
      */
-    const MODEL = WishList::class;
+    const MODEL = Wishlist::class;
 
     /**
      * @var ApplianceRepository
@@ -19,7 +19,7 @@ class WishListRepository extends BaseRepository
     private $applianceRepository;
 
     /**
-     * WishListRepository constructor.
+     * WishlistRepository constructor.
      * @param ApplianceRepository $applianceRepository
      */
     public function __construct(ApplianceRepository $applianceRepository)
@@ -31,7 +31,7 @@ class WishListRepository extends BaseRepository
      * @param array $data
      * @param bool $provider
      *
-     * @return WishList
+     * @return Wishlist
      */
     public function create(array $data, $provider = false)
     {
@@ -49,11 +49,11 @@ class WishListRepository extends BaseRepository
     /**
      * @param $userId
      * @param int $appliancesLimit
-     * @return WishList
+     * @return Wishlist
      */
     public function findByUserId($userId, $appliancesLimit = 20)
     {
-        /** @var WishList $wishlist */
+        /** @var Wishlist $wishlist */
         $wishlist = $this->query()->where('user_id', $userId)->first();
 
         /** @var ApplianceRepository $applianceRepository */
@@ -70,7 +70,7 @@ class WishListRepository extends BaseRepository
 
     /**
      * @param int $userId
-     * @return WishList
+     * @return Wishlist
      */
     public function findOrCreateByUserId($userId)
     {

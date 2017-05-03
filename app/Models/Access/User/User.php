@@ -64,6 +64,6 @@ class User extends Authenticatable
      */
     public function wishlist()
     {
-        return $this->hasOne('App\Models\WishList\WishList');
+        return $this->hasOne('App\Models\Wishlist\Wishlist');
     }
 }

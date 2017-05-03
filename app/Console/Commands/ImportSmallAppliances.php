@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Appliance\Appliance;
-use App\Services\WishList\SmallAppliancesCrawler;
+use App\Services\Wishlist\SmallAppliancesCrawler;
 use Illuminate\Console\Command;
 
 class ImportSmallAppliances extends Command

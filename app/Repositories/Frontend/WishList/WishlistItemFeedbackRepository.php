@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Repositories\Frontend\WishList;
+namespace App\Repositories\Frontend\Wishlist;
 
-use App\Models\WishList\WishList;
-use App\Models\WishList\WishListItemFeedback;
+use App\Models\Wishlist\Wishlist;
+use App\Models\Wishlist\WishlistItemFeedback;
 use App\Repositories\BaseRepository;
 
 /**
  * TODO: Not implemented yet.
- * Class WishListItemFeedbackRepository
- * @package App\Repositories\Frontend\WishList
+ * Class WishlistItemFeedbackRepository
+ * @package App\Repositories\Frontend\Wishlist
  */
-class WishListItemFeedbackRepository extends BaseRepository
+class WishlistItemFeedbackRepository extends BaseRepository
 {
     /**
      * Associated Repository Model.
      */
-    const MODEL = WishListItemFeedback::class;
+    const MODEL = WishlistItemFeedback::class;
 
     /**
      * @param array $data

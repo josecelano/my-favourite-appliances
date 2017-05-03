@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\WishList;
+namespace App\Services\Wishlist;
 
 use App\Models\Appliance\Appliance;
 use App\Models\Appliance\ApplianceCategory;

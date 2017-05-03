@@ -1,29 +1,29 @@
 <?php
 
-namespace App\Services\WishList;
+namespace App\Services\Wishlist;
 
 use App\Exceptions\RemoveApplianceFromNotExistingWishlistException;
-use App\Repositories\Frontend\WishList\WishListRepository;
+use App\Repositories\Frontend\Wishlist\WishlistRepository;
 
 class WishlistService
 {
     /**
-     * @var WishListRepository
+     * @var WishlistRepository
      */
     private $wishListRepository;
 
     /**
      * WishlistService constructor.
-     * @param WishListRepository $wishListRepository
+     * @param WishlistRepository $wishListRepository
      */
-    public function __construct(WishListRepository $wishListRepository)
+    public function __construct(WishlistRepository $wishListRepository)
     {
         $this->wishListRepository = $wishListRepository;
     }
 
     /**
      * @param $userId
-     * @return \App\Models\WishList\WishList
+     * @return \App\Models\Wishlist\Wishlist
      */
     public function getUserWishlist($userId)
     {

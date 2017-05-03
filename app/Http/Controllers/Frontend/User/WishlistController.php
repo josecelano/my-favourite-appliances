@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Frontend\User;
 
 use App\Http\Controllers\Controller;
-use App\Services\WishList\WishlistService;
+use App\Services\Wishlist\WishlistService;
 use Illuminate\Http\Request;
 
-class WishListController extends Controller
+class WishlistController extends Controller
 {
     /**
      * @var WishlistService
@@ -14,7 +14,7 @@ class WishListController extends Controller
     private $wishlistService;
 
     /**
-     * WishListController constructor.
+     * WishlistController constructor.
      * @param WishlistService $wishlistService
      */
     public function __construct(WishlistService $wishlistService)

@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Appliance\Appliance;
-use App\Services\WishList\DishwashersCrawler;
+use App\Services\Wishlist\DishwashersCrawler;
 use Illuminate\Console\Command;
 
 class ImportDishwashers extends Command
