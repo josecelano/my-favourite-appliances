@@ -56,6 +56,10 @@ class WishlistRepository extends BaseRepository
         /** @var Wishlist $wishlist */
         $wishlist = $this->query()->where('user_id', $userId)->first();
 
+        if (!$wishlist) {
+            return null;
+        }
+
         /** @var ApplianceRepository $applianceRepository */
         $applianceRepository = $this->applianceRepository;
 

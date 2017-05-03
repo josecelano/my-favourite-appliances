@@ -48,6 +48,10 @@ class ApplianceRepository extends BaseRepository
      */
     public function findWhereIdIn(array $ids, $limit = -1)
     {
+        if (count($ids) == 0) {
+            return [];
+        }
+
         if ($limit == -1) {
             return $this->query()->whereIn('id', $ids)->get();
         } else {

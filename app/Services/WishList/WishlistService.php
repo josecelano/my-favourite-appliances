@@ -27,7 +27,7 @@ class WishlistService
      */
     public function getUserWishlist($userId)
     {
-        return $this->wishListRepository->findByUserId($userId);
+        return $this->wishListRepository->findOrCreateByUserId($userId);
     }
 
     /**
