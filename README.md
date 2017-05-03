@@ -51,6 +51,7 @@ other features implemented, then feel free to go wild!
 mysqladmin -u homestead -psecret create homestead
 git clone git@github.com:josecelano/my-favourite-appliances.git
 cd my-favourite-appliances
+php -r "file_exists('.env') || copy('.env.example', '.env');"
 composer install
 php artisan migrate
 php artisan db:seed
