@@ -10,7 +10,8 @@ saying DDD can also be applied for simple problems. I think I would use a CRUD a
 later to DDD as soon as the project becomes a long term project. But on the other hand I do not see a very greater
 cost on implementing DDD from the beginning. With this sample I want to test both solutions for the same simple problem.
 
-> For the time being is only implemented the CRUD rapid approach.
+> This is the DDD approach:
+> https://github.com/josecelano/ddd-laravel-sample
 
 ## Specifications
 
