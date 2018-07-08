@@ -74,8 +74,8 @@ php artisan schedule:run
 
 ## Live demo
 
-Url: http://my-favourite-appliances.josecelano.name
-Demo accounts: https://github.com/josecelano/my-favourite-appliances/blob/master/database/seeds/Access/UserTableSeeder.php
+* Url: http://my-favourite-appliances.josecelano.name
+* Demo accounts: https://github.com/josecelano/my-favourite-appliances/blob/master/database/seeds/Access/UserTableSeeder.php
 
 Open localhost:8000 in the browser.
 
